@@ -1,0 +1,12 @@
+services:
+  webserver:
+    image: nginx
+    ports:
+      - "8080:80"
+
+  datenbank:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: test1234
+    ports:
+      - "5432:5432"
